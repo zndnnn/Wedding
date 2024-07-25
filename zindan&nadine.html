@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zindan&Nadine</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+  crossorigin="anonymous"></script>
+  
+  <section>
+    <div class="text1">
+        <p class="font1">The Wedding of Zindan & Nadine</p>
+        <p class="font2">Zindan & Nadine</p>
+        <p class="font1">Minggu, 01 Oktober 2024</p>
+    </div>
+
+    <div class="lead">
+        <div class="lead-slide">
+          <img src="1x/1.jpg" />
+          <img src="1x/2.jpg" />
+          <img src="1x/3.jpg" />
+          <img src="1x/4.jpg" />
+          <img src="1x/5.jpg" />
+          <img src="1x/6.jpg" />
+          <img src="1x/7.2.jpg" />
+          <img src="1x/8.jpg" />
+        </div>
+    </div>
+  </section>
+
+
+        <script>
+          var copy = document.querySelector(".logos-slide").cloneNode(true);
+          document.querySelector(".logos").appendChild(copy);
+          var copy = document.querySelector(".lead-slide").cloneNode(true);
+          document.querySelector(".lead").appendChild(copy);
+        </script>
+</body>
+</html>
