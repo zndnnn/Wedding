@@ -15,6 +15,7 @@ html, body {
 body {
     margin: auto;
     padding: 0px;
+    padding-bottom: 60px;
     font-family: 'Montserrat-M';
     position: relative;
     background-image: url(asset/7.1.jpg);
