@@ -24,10 +24,165 @@ body {
     background-position-y: top;
 }
 
+a.tbl-biru {
+    font-size: 12px;
+    font-family: 'Higuen';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3b3a3a;
+    border-radius: 10px;
+    margin-top: -50px;
+    margin-left: 120px;
+    margin-right: 240px;
+    padding: 5px 5px 10px 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.5s;
+	animation:brath 8s  linear infinite;
+}
+
+a.tbl-biru:hover {
+    background: #1e1f21;
+    color: white;
+    text-decoration: none;
+}
+
+a.tbl-biru-2 {
+    font-size: 12px;
+    font-family: 'Higuen';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3b3a3a;
+    border-radius: 10px;
+    margin-top: -60px;
+    margin-left: 240px;
+    margin-right: 120px;
+    padding: 5px 5px 10px 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.5s;
+	animation:brath 8s  linear infinite;
+}
+
+a.tbl-biru-2:hover {
+    background: #1e1f21;
+    color: white;
+    text-decoration: none;
+}
+
+.waktu {
+    margin-top: 20px;
+}
+
+a.tbl-biru-3 {
+    font-size: 12px;
+    font-family: 'Higuen';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3b3a3a;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 120px;
+    margin-right: 120px;
+    padding: 5px 5px 10px 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.5s;
+    border-color: #ffffff;
+    border: 1.5px solid;
+	animation:brath 8s  linear infinite;
+}
+
+a.tbl-biru-3:hover {
+    background: #1e1f21;
+    color: white;
+    text-decoration: none;
+}
+
+.orang {
+    margin: 0;
+    padding: 0px;
+}
+
 .text1 {
     color: whitesmoke;
     text-align: center;
     margin-top: 550px;
+}
+
+.text3 {
+    color: whitesmoke;
+    text-align: center;
+    justify-content: center;
+    margin-top: -40px;
+    padding-bottom: 15px;
+    padding-top: 100px;
+    background-image: linear-gradient(rgba(255, 248, 243, 0), rgb(179, 164, 146));
+}
+
+.text4 {
+    color: whitesmoke;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(179, 164, 146);
+    margin-top: -1px;
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+
+.text5 {
+    color: whitesmoke;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(169, 149, 124);
+    margin-top: -1px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.text6 {
+    color: whitesmoke;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(132, 116, 97);
+    margin-top: -1px;
+    padding-top: 100px;
+    padding-bottom: 300px;
+}
+
+.orang img{
+    display: flexbox;
+    width: 90%;
+    margin-top: 40px;
+    border-top-left-radius: 30px ;
+    border-top-right-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.text5 img{
+    display: flexbox;
+    width: 90%;
+    margin-top: 0px;
+    border-top-left-radius: 15px ;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.text6 img{
+    display: flexbox;
+    width: 90%;
+    margin-top: 40px;
+    border-top-left-radius: 500px ;
+    border-top-right-radius: 500px;
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .font1 {
@@ -43,15 +198,45 @@ body {
     margin-bottom: 19px;
 }
 
+.font2-1 {
+    font-family: "Alison";
+    font-size: 60px;
+    margin-top: -30px;
+    margin-bottom: 19px;
+    margin-left: 130px;
+}
+
 .font3 {
     font-family: "Times-B";
-    font-size: 20px;
+    font-size: 30px;
     margin-top: 8px;
+    color: whitesmoke;
 }
 
 .font4 {
     font-size: 13px;
     font-family: "Montserrat-M";
+}
+
+.font5 {
+    font-family: "Times-R";
+    font-size: 50px;
+    margin-top: 0;
+    color: white;
+}
+
+.font5-1 {
+    font-family: "Times-R";
+    font-size: 50px;
+    margin-top: -40px;
+    color: white;
+}
+
+.font6 {
+    font-family: "Times-R";
+    font-size: 40px;
+    margin-top: 8px;
+    color: white;
 }
 
 .lead {
@@ -98,6 +283,13 @@ body {
     }
   }
 
+@keyframes brath{
+    0%{transform: scale(.9);}
+    25%{transform: scale(1);}
+    60%{transform: scale(.9);}
+    100%{transform: scale(1);}
+}
+
 @font-face {
     font-family: Higuen;
     src: url(asset/Higuen.otf);
@@ -132,4 +324,9 @@ body {
 @font-face {
     font-family: Times-B;
     src: url(asset/Times-B.ttf);
+}
+
+@font-face {
+    font-family: Times-R;
+    src: url(asset/Times-R.ttf);
 }

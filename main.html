@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rais&Velin</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+  crossorigin="anonymous"></script>
+  <audio controls autoplay hidden>
+    <source src="asset/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <section>
+    <div class="text1">
+        <p class="font1">The Wedding of Rais & Velin</p>
+        <p class="font2">Rais & Velin</p>
+        <p class="font1">Kamis, 04 Agustus 2024</p>
+    </div>
+
+    <div class="lead">
+        <div class="lead-slide">
+          <img src="1x/1.jpg" />
+          <img src="1x/2.jpg" />
+          <img src="1x/3.jpg" />
+          <img src="1x/4.jpg" />
+          <img src="1x/5.jpg" />
+          <img src="1x/6.jpg" />
+          <img src="1x/7.2.jpg" />
+          <img src="1x/8.jpg" />
+        </div>
+    </div>
+    <div class="text3">
+    </div>
+  </section>
+
+  <section class="orang">
+    <div class="text4">
+      <p class="font6">Our</p>
+      <p class="font5">Wedding</p>
+      <img src="300ppi/Velin.png" alt="cewe">
+      <a href="main.html" target="_blank" class="tbl-biru">@velin</a>
+      <img src="300ppi/Rais.png" alt="cowo">
+      <a href="main.html" target="_blank" class="tbl-biru-2">@rais</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="text5">
+      <p class="font5-1">WEDDING</p>
+      <p class="font2-1">Event</p>
+      <img src="300ppi/Resepsi.png" alt="resepsi">
+      <a href="https://maps.app.goo.gl/CKLUbU2VAnQjBfBRA" target="_blank" class="tbl-biru-2">Maps</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="text6">
+      <p class="font5-1">EVENT</p>
+      <p class="font2-1">Countdown</p>
+      <img src="300ppi/Countdown.png" alt="countdown">
+      <p id="demo" class="waktu"></p>
+      <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Aug 4, 2024 08:00:00").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          // Get today's date and time
+          var now = new Date().getTime();
+            
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+            
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+          // Output the result in an element with id="demo"
+          document.getElementById("demo").innerHTML = days + " Hari, " + hours + " Jam, "
+          + minutes + " Menit, " + seconds + " Detik ";
+            
+          // If the count down is over, write some text 
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "Acara Sudah Berlalu";
+          }
+        }, 1000);
+        </script>
+      <a href="https://calendar.app.google/sxvk2erKnBRm6zwd6" target="_blank" class="tbl-biru-3">Simpan di Kalender</a>
+    </div>
+  </section>
+
+
+
+        <script>
+          var copy = document.querySelector(".logos-slide").cloneNode(true);
+          document.querySelector(".logos").appendChild(copy);
+          var copy = document.querySelector(".lead-slide").cloneNode(true);
+          document.querySelector(".lead").appendChild(copy);
+        </script>
+</body>
+</html>
